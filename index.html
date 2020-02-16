@@ -1,62 +1,66 @@
 <!DOCTYPE html>
+
 <html lang="en-us">
 
-<head>
+  <head>
 
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <title>Word Guess Game</title>
+    <title>Word Guess Game</title>
 
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <script src="assets/javascript/game.js"></script>
-  
+    <script src="assets/javascript/game.js"></script>
+    
+  </head>
 
-</head>
+  <body>
 
-<body>
-  <header>
-    <img id="stalagtite" src="assets/images/stalagtite.png" alt="">
-    <h1 id="black"></h1>
-    <h1 id="darkGrey"></h1>
-    <h1 id="grey"></h1>
-    <h1 class="underlined">Dungeons and Dragons Hangman</h1>
-    <h1 class="underlined" id="h1Back">Dungeons and Dragons Hangman</h1>
-  </header>
+    <header>
 
-  <main>
+      <img id="stalagtite" src="assets/images/stalagtite.png" alt="">
+      <h1 id="black"></h1>
+      <h1 id="darkGrey"></h1>
+      <h1 id="grey"></h1>
+      <h1 class="underlined">Dungeons and Dragons Hangman</h1>
+      <h1 class="underlined" id="h1Back">Dungeons and Dragons Hangman</h1>
 
+    </header>
 
+    <main>
 
-    <div class="textBack">
-      <div class="textBox textMain">
-        <div>Press any letter to get started!</div>
-        <div class="borderBot">Try and Guess the Dungeons and Dragons Monster!</div>  
+      <div class="textBack">
+        <div class="underlined textBox textMain">
+          <div>Press any letter to get started!</div>
+          <div class="borderBot">Try and Guess the Dungeons and Dragons Monster!</div>  
+        </div>
+        <div class="textBox textMain">
+          <div class="guessText">B A L _ R</div>
+        </div>
+        <div class="textBox textMain">
+          <div class="underlined">Your Guesses:</div>
+          <div class="guesses">A E I O U</div>
+        </div>
+        <div class="textBox textMain">
+          <div class="underlined">Wrong Guess Left: <span>10</span></div>
+        </div>
       </div>
-      <div class="textBox textMain">
-        <div class="guessText">B E _ _ L D E _</div>
-      </div>
-      <div class="textBox textMain">
-        <div class="underlined">Your Guesses:</div>
-        <div class="guesses">A E I O U</div>
-      </div>
-      <div class="textBox textMain">
-        <div>Wrong Guess Left: <span>6</span></div>
-      </div>
-    </div>
 
-    <div>
-      <img class="monsterImage" src="assets/images/dandd.png" alt="">
-    </div>
+      <div>
+        <img class="monsterImage" src="assets/images/dandd.png" alt="">
+      </div>
 
-  </main>
+    </main>
 
-  <footer>
-    <img id="stalagmite" src="assets/images/stalagmite.png" alt="">
-  </footer>
-</body>
+    <footer>
+
+      <img id="stalagmite" src="assets/images/stalagmite.png" alt="">
+
+    </footer>
+
+  </body>
 
 </html>

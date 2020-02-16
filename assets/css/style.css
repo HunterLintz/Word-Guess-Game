@@ -41,8 +41,9 @@ footer{
     background-color: #252525;
     z-index: -3;
 }
-main{ position: relative;
-    top: 200px;
+main{ 
+    position: relative;
+    top: 175px;
 }
 h1{
     position: fixed;
@@ -69,7 +70,7 @@ h1{
     margin-left: 10%;
     margin-top: 50px;
     padding: 20px;
-    max-width: 26%;
+    width: 26%;
     background-color: #2b2b2b;
     border: 5px solid #252525;
 }
@@ -103,8 +104,10 @@ h1{
 @media only screen and (max-width: 1500px){
     main{
         z-index: -6;
+        top: 225px;
     }
     .monsterImage{
+        position: relative;
         float: none;
         max-width: none;
         margin-left: 20%;
@@ -121,4 +124,10 @@ h1{
         margin-top: initial;
         margin-bottom: 30px;
     }
+}
+@media only screen and (max-width: 900px){
+    main{
+        top: 275px;
+    }
+
 }
