@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(../images/dark_wall.png);
+    background-repeat: repeat;
+    font-family: 'Merienda One', cursive;
+
+    /* font-family: 'Lacquer', sans-serif; */
+}
+#stalagtite{
+    position: fixed;
+    top: 0px;
+}
+footer{
+    clear: both;
+}
+#stalagmite{
+    position: fixed;
+    bottom: -45px;
+}
+#black{
+    position: fixed;
+    width: 100%;
+    top: -75px;
+    background-color: #1a1a1a;
+    z-index: -1;
+}
+#darkGrey{
+    position: fixed;
+    width: 100%;
+    top: -40px;
+    background-color: #202020;
+    z-index: -2;
+}
+#grey{
+    position: fixed;
+    width: 100%;
+    top: -5px;
+    background-color: #252525;
+    z-index: -3;
+}
+main{ position: relative;
+    top: 200px;
+}
+h1{
+    position: fixed;
+    font-size: 50px;
+    color: #EC2127;
+    width: 100%;
+    text-align: center;
+    padding-top: 117px;
+    z-index: -4;
+}
+#h1Back{
+    position: fixed;
+    font-size: 50px;
+    color: #580101;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #2b2b2b;
+    border-bottom: 5px solid #252525;
+    padding-top: 120px;
+    z-index: -5;
+}
+.monsterImage{
+    margin-left: 10%;
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 26%;
+    background-color: #2b2b2b;
+    border: 5px solid #252525;
+}
+.textBack{
+    float: right;
+    background-color: #2b2b2b;
+    border: 5px solid #252525;
+    margin-top: 50px;
+    padding: 20px;
+    height: 500px;
+    width: 40%;
+    margin-right: 10%;
+    right: 0px;
+}
+.textMain{
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: center;
+    color: #EC2127;
+}
+.textBox{
+    background-color: #252525;
+    margin-top: 10px;
+}
+.underlined{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 1500px){
+    main{
+        z-index: -6;
+    }
+    .monsterImage{
+        float: none;
+        max-width: none;
+        margin-left: 20%;
+        margin-top: initial;
+        width: 56%;
+        margin-bottom: 125px;
+    }
+    .textBack{
+        left: 0;
+        float: none;
+        margin-left: 20%;
+        width: 56%;
+        height: initial;
+        margin-top: initial;
+        margin-bottom: 30px;
+    }
+}
