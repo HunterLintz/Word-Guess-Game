@@ -31,7 +31,7 @@ function monsterGen(){
         }
 };
 function reload(){
-    location.reload();
+    location.reload(); 
 }
 function endGame(){
     gameEnd = true;

@@ -121,7 +121,8 @@ h1{
     border-bottom: 2px solid #EC2127;
 }
 #end{
-    width: 26%;
+    width: 27%;
+    padding-left: 25px;
     margin-left: 10%;
     font-size: 50px;
     font-size: 30px;
@@ -153,6 +154,8 @@ button{
     position: absolute;
     left: 35%;
     z-index: 10;
+    padding: 1px;
+    margin-left: 20px;
 }
 button:hover{
     background-color: #580101;
@@ -162,14 +165,18 @@ button:hover{
     main{
         top: 225px;
     }
-    .monsterImage{
+    #monsterImage{
         position: relative;
         float: none;
         max-width: none;
         margin-left: 20%;
         margin-top: initial;
         width: 56%;
-        margin-bottom: 125px;
+    }
+    #end{
+        margin-left: 20%;
+        width: 56%;
+
     }
     .textBack{
         left: 0;
