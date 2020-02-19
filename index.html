@@ -34,24 +34,42 @@
 
       <div class="textBack">
         <div class="underlined textBox textMain">
-          <div>Press any letter to get started!</div>
+          <div>Press any key to get started!</div>
           <div class="borderBot">Try and Guess the Dungeons and Dragons Monster!</div>  
         </div>
-        <div class="textBox textMain">
-          <div class="guessText">B A L _ R</div>
+        <div class="textBox textLetters">
+          <div class="guessText">
+          <span class="bottomBorder"><span class="hidden" id="letter0"></span></span>
+          <span class="bottomBorder"><span class="hidden" id="letter1"></span></span>
+          <span class="bottomBorder"><span class="hidden" id="letter2"></span></span>
+          <span class="bottomBorder"><span class="hidden" id="letter3"></span></span>
+          <span class="bottomBorder"><span class="hidden" id="letter4"></span></span>
+          <span class="bottomBorder"><span class="hidden" id="letter5"></span></span>
+          <span class="bottomBorder"><span class="hidden" id="letter6"></span></span>
+          <span class="bottomBorder"><span class="hidden" id="letter7"></span></span>
+          <span class="bottomBorder"><span class="hidden" id="letter8"></span></span>
+          <span class="bottomBorder"><span class="hidden" id="letter9"></span></span>
+          </div>
         </div>
         <div class="textBox textMain">
-          <div class="underlined">Your Guesses:</div>
-          <div class="guesses">A E I O U</div>
+          <div class="guesses underlined">Your Guesses:</div>
+          <div id="guesses"></div>
         </div>
         <div class="textBox textMain">
-          <div class="underlined">Wrong Guess Left: <span>10</span></div>
+          <div class="underlined">Wrong Guesses Left: <span id="guessesLeft">10</span></div>
         </div>
       </div>
 
       <div>
-        <img class="monsterImage" src="assets/images/dandd.png" alt="">
+        <img id="monsterImage" src="assets/images/dandd.png" alt="">
       </div>
+      <div id="end">
+        <div id="win">You Win!</div>
+        <div id="lose">You Lose...</div>
+        <div>Click this button to reset!</div>
+        <button value="Reset" type="button" onclick="reload()">Reset</button>
+      </div>
+
 
     </main>
 
