@@ -130,6 +130,7 @@ h1{
     color: #EC2127;
     visibility: hidden;
     margin-bottom: 200px;
+    position: relative;
 
 }
 #win{
@@ -140,6 +141,7 @@ h1{
 }
 
 button{
+    cursor: pointer;
     background-color: #EC2127;
     color: #252525;
     width: 150px;
@@ -148,9 +150,13 @@ button{
     font-size: 20px;
     font-family: 'Merienda One', cursive;
     border: 2px solid #252525;
+    position: absolute;
+    left: 35%;
+    z-index: 10;
 }
-button:active{
+button:hover{
     background-color: #580101;
+    color: #fff;
 }
 @media only screen and (max-width: 1500px){
     main{

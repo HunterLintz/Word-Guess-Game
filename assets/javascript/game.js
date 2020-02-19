@@ -1,50 +1,27 @@
-//array of Monsters
 var monsters = ["BALOR","BEHOLDER","DRAGON","ELEMENTAL","GHOST","GIANT","GNOLL","GOBLIN","LICH","MIMIC","MINDFLAYER","MUMMY","OOZE","ORC","OWLBEAR","SKELETON","VAMPIRE","ZOMBIE"];
-//array of guessed letters
 var guesses = [];
-//array of current monsters letters
 var currentMon;
-//monsters name in lowercase
 var randomMonsterLower;
-//path for monster
 var monImage;
-//guesses left
 var guessesLeft = 10;
-//current letter in generation function
 var letterGenStr;
-//sets current letters id 
 var currentGenLetter;
-//current letter being checked
 var currentLetter;
-//document.get for gen function
 var letGenVar;
-//document.get for check function
 var letVar;
-//boolean for if user guesses wrong
 var guessWrong = false;
-//boolean for if user wins game
 var win = false;
-//boolean for if game is over
 var gameEnd = false;
-//set to length of current monster string
 var nameLength;
-//number of times user guesses right
 var guessRight = 0;
-//var used to generate random monster
 var randomMonster;
-//function used to generate monster
+
 function monsterGen(){
-    //setting random monster
     randomMonster = monsters[Math.floor(Math.random()*monsters.length)];
-    //splits randomMonster into array
     currentMon = randomMonster.split("");
-    //sets to currentMon length
     nameLength = currentMon.length;
-    //sets to randomMonster but lowercase
     randomMonsterLower = randomMonster.toLowerCase()
-    //sets file path for the current monsters image
     monImage = "assets/images/monsterImages/"+randomMonsterLower+".png"
-    //runs for every item in currentMon array
     for(i = 0; i < currentMon.length; i++){
         letterGenStr = currentMon[i];
         currentGenLetter = ("letter" + i);
