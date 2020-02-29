@@ -15,7 +15,7 @@ var gameEnd = false;
 var nameLength;
 var guessRight = 0;
 var randomMonster;
-
+//generates monster for hangman word
 function monsterGen(){
     randomMonster = monsters[Math.floor(Math.random()*monsters.length)];
     currentMon = randomMonster.split("");
@@ -30,9 +30,11 @@ function monsterGen(){
         letGenVar.style.visibility = "hidden";
         }
 };
+//reloads page
 function reload(){
     location.reload(); 
 }
+//checks if you won or not
 function endGame(){
     gameEnd = true;
     if (win == false){
@@ -44,6 +46,8 @@ function endGame(){
         document.getElementById("win").style.display = "block";
     }
 };
+
+//found this online when i searched how to find every instance of a value in an array 
 Array.prototype.multiIndexOf = function (el) { 
     var idxs = [];
     for (var c = this.length - 1; c >= 0; c--) {
@@ -53,6 +57,7 @@ Array.prototype.multiIndexOf = function (el) {
     }
     return idxs;
 };
+// on each key press checks if its right or not and does logic accordingly
 document.onkeyup = function(event){
     if (event.keyCode >= 65 && event.keyCode <= 90){
         if (gameEnd === false){
@@ -86,6 +91,7 @@ document.onkeyup = function(event){
         }
     };
 };
+//waits for html to load before starting
 document.addEventListener('DOMContentLoaded', (event) => {
     monsterGen();
   })
